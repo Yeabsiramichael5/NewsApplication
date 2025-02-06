@@ -10,7 +10,7 @@ class ShowCategoryNews {
 
   Future<void> getCatagoriesNews(String category) async {
     String url =
-        "https://gnews.io/api/v4/top-headlines?category=$category&lang=en&country=us&max=10&apikey=5e78821684862c88029498e7a9e74f9e";
+        "https://gnews.io/api/v4/top-headlines?category=$category&lang=en&country=us&max=10&apikey=";
 
     try {
       var response = await http.get(Uri.parse(url));
